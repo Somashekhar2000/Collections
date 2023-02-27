@@ -18,4 +18,5 @@ public class ArrayList01 {
 	public static void printingListElements(List list) {
 		System.out.println(list);
 	}
+	
 }

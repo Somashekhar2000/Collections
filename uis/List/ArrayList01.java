@@ -109,9 +109,15 @@ public class ArrayList01 {
 /*
  * 16.WAP to replace the second element of an ArrayList with the specified element
  */
-		Object o=new Object();
-    	o=23;
-		ArrayList01.replaceSecondElement(b1, o);
+//		Object o=new Object();
+//    	o=23;
+//		ArrayList01.replaceSecondElement(b1, o);
+		
+/*
+ * 17.WAP to print all the elements of an ArrayList using the position of the elements
+ */
+		ArrayList01.PrintingElementsOfAnArrayList(b1);
+		
 		
 	}
 	
@@ -207,5 +213,11 @@ public class ArrayList01 {
 		System.out.println(" initial list:"+list);
 		list.set(2, o);
 		System.out.println("new list :"+list);
+	}
+	
+	public static void PrintingElementsOfAnArrayList(List list) {
+		for(Object a : list) {
+			System.out.println(a);
+		}
 	}
 }

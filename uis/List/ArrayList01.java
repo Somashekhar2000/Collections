@@ -75,9 +75,15 @@ public class ArrayList01 {
  * 9. WAP to EXTRACT A PORTION OF AN ARRAYLIST.
  */
 		
-		int fromIndex=2;
-		int toIndex=5;
-		ArrayList01.extractList(b1, fromIndex, toIndex);
+//		int fromIndex=2;
+//		int toIndex=5;
+//		ArrayList01.extractList(b1, fromIndex, toIndex);
+		
+/*
+ * 10.WAP to compare two ArrayList
+ */
+		
+		ArrayList01.compareTwoArrayList(a1, a1);
 		
 	}
 	
@@ -135,6 +141,16 @@ public class ArrayList01 {
 	public static void extractList(List list,int fromIndex,int toIndex) {
 		System.out.println(" initial list:"+list);
 		System.out.println("extracted portion :"+list.subList(fromIndex, toIndex));
+	}
+	
+	public static void compareTwoArrayList(ArrayList list1,ArrayList list2) {
+		for (int i = 0; i < list1.size(); i++) {
+			if (list1.get(i).equals(list2.get(i))) {
+				System.out.print(" yes ");
+			} else {
+				System.out.print(" no ");
+			}
+		}
 	}
 
 }

@@ -47,10 +47,15 @@ public class ArrayList01 {
 /*
  * 5. WAP to UPDATE SPECIFIC ELEMENT by given element.
  */
-		Object o=new Object();
-     	o="red";
-		ArrayList01.updateSpecificElement(b1, o);
+//		Object o=new Object();
+//     	o="red";
+//		ArrayList01.updateSpecificElement(b1, o);
 		
+/*
+ * 6. WAP to REMOVE THIRD ELEMENT from an ArrayList
+ */
+		
+		ArrayList01.removeThirdElement(b1);
 		
 	}
 	
@@ -81,6 +86,12 @@ public class ArrayList01 {
 		System.out.println(" initial list:"+list);
 		list.set(2, o);
 		System.out.println("final list :"+list);
+	}
+	
+	public static void removeThirdElement(List list) {
+		System.out.println(" initial list:"+list);
+		list.remove(2);
+		System.out.println("Final list :"+list);
 	}
 
 }

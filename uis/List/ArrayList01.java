@@ -55,7 +55,15 @@ public class ArrayList01 {
  * 6. WAP to REMOVE THIRD ELEMENT from an ArrayList
  */
 		
-		ArrayList01.removeThirdElement(b1);
+	//	ArrayList01.removeThirdElement(b1);
+		
+/*
+ * 7. WAP to SEARCH AN ELEMENT in an ArrayList.
+ */
+		
+		Object o=new Object();
+		o="Red";
+		ArrayList01.searchElement(b1, o);
 		
 	}
 	
@@ -92,6 +100,15 @@ public class ArrayList01 {
 		System.out.println(" initial list:"+list);
 		list.remove(2);
 		System.out.println("Final list :"+list);
+	}
+	
+	public static void searchElement(List list,Object o) {
+		System.out.println(" initial list:"+list);
+		if (list.contains(o)) {
+			System.out.println(o+" is present in list");
+		} else {
+			System.out.println(o+" is not present in list");
+		}
 	}
 
 }

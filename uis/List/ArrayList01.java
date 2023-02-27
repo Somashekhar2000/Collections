@@ -94,8 +94,12 @@ public class ArrayList01 {
 /*
  * 13.WAP to empty an ArrayList.
  */
-		ArrayList01.emptyAnArrayList(b1);
+//		ArrayList01.emptyAnArrayList(b1);/
 		
+/*
+ * 14.WAP to test an ArrayList is empty or not.
+ */
+		ArrayList01.checkIfEmpty(b1);
 	}
 	
 	
@@ -173,5 +177,10 @@ public class ArrayList01 {
 	public static void emptyAnArrayList(List list) {
 		 list.removeAll(list);
 		 System.out.println(list);
+	}
+	
+	public static void checkIfEmpty(List list) {
+		 
+		 System.out.println(list.isEmpty());
 	}
 }

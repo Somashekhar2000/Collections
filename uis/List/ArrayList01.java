@@ -61,9 +61,15 @@ public class ArrayList01 {
  * 7. WAP to SEARCH AN ELEMENT in an ArrayList.
  */
 		
-		Object o=new Object();
-		o="Red";
-		ArrayList01.searchElement(b1, o);
+//		Object o=new Object();
+//		o="Red";
+//		ArrayList01.searchElement(b1, o);
+		
+/*
+ *8. WAP to COPY ONE ARRAYLIST INTO ANOTHER. 
+ */
+		
+		ArrayList01.copyArrayListToAnother(b1);
 		
 	}
 	
@@ -109,6 +115,13 @@ public class ArrayList01 {
 		} else {
 			System.out.println(o+" is not present in list");
 		}
+	}
+	
+	public static void copyArrayListToAnother(List list) {
+		System.out.println(" initial list:"+list);
+		ArrayList list2=new ArrayList(list.size());
+		list2.addAll(list);
+		System.out.println("new list :"+list);
 	}
 
 }

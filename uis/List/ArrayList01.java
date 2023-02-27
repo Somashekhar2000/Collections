@@ -41,8 +41,16 @@ public class ArrayList01 {
 /*
  * 4. WAP to RETRIEVE an element (at a SPECIFIED INDEX) from a given ArrayList.
  */
-		int index = 2;
-		ArrayList01.retriveAnElement(b1, index);
+//		int index = 2;
+//		ArrayList01.retriveAnElement(b1, index);
+		
+/*
+ * 5. WAP to UPDATE SPECIFIC ELEMENT by given element.
+ */
+		Object o=new Object();
+     	o="red";
+		ArrayList01.updateSpecificElement(b1, o);
+		
 	}
 	
 	
@@ -68,5 +76,10 @@ public class ArrayList01 {
 		System.out.println(list.get(index));
 	}
 
+	public static void updateSpecificElement(List list ,Object o) {
+		System.out.println(" initial list:"+list);
+		list.set(2, o);
+		System.out.println("final list :"+list);
+	}
 
 }

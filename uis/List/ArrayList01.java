@@ -104,7 +104,15 @@ public class ArrayList01 {
 /*
  * 15.WAP to trim the capacity of an ArrayList the current list size. WAP to increase the size of an ArrayList.
  */
-		ArrayList01.trimExtra(b1);
+//		ArrayList01.trimExtra(b1);
+		
+/*
+ * 16.WAP to replace the second element of an ArrayList with the specified element
+ */
+		Object o=new Object();
+    	o=23;
+		ArrayList01.replaceSecondElement(b1, o);
+		
 	}
 	
 	
@@ -192,5 +200,12 @@ public class ArrayList01 {
 	public static void trimExtra(ArrayList list) {
 		list.trimToSize();
 		 System.out.println(list);
+	}
+	
+	public static void replaceSecondElement(List list ,Object o) {
+		//list[2]=o;
+		System.out.println(" initial list:"+list);
+		list.set(2, o);
+		System.out.println("new list :"+list);
 	}
 }

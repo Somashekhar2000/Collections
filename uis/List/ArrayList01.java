@@ -13,10 +13,9 @@ public class ArrayList01 {
 						a1.add(40);
 						a1.add(50);
 					ArrayList01.printingListElements(a1);
-						
+	System.out.println("---The End---");					
 	}
 	public static void printingListElements(List list) {
 		System.out.println(list);
 	}
-	
 }

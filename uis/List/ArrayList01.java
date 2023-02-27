@@ -6,12 +6,19 @@ import java.util.List;
 public class ArrayList01 {
 
 	public static void main(String[] args) {
-						ArrayList a1 =new ArrayList<>();
-						a1.add(10);
-						a1.add(20);
-						a1.add(30);
-						a1.add(40);
-						a1.add(50);
+		ArrayList a1 =new ArrayList();
+		a1.add(10);
+		a1.add(20);
+		a1.add(30);
+		a1.add(40);
+		a1.add(50);
+		
+		ArrayList b1 = new ArrayList();
+		b1.add("Red");
+		b1.add("Green");
+		b1.add("Orange");
+		b1.add("White");
+		b1.add("Black");
 						
 /*
  * 1. WAP to create a new ArrayList, add some colours (String) and PRINT out the collection.
@@ -27,9 +34,15 @@ public class ArrayList01 {
  * 3. WAP to insert an element into the ArrayList at the FIRST position.
  */
 						
-		Object a2 = new Object();
-		a2 = "red";
-		ArrayList01.insertAnElementAt0(a1, a2);
+//		Object a2 = new Object();
+//		a2 = "red";
+//		ArrayList01.insertAnElementAt0(a1, a2);
+		
+/*
+ * 4. WAP to RETRIEVE an element (at a SPECIFIED INDEX) from a given ArrayList.
+ */
+		int index = 2;
+		ArrayList01.retriveAnElement(b1, index);
 	}
 	
 	
@@ -49,6 +62,10 @@ public class ArrayList01 {
 		System.out.println(" Starting list:"+list);
 		list.add(0, o);
 		System.out.println("new list"+list);
+	}
+	
+	public static void retriveAnElement(List list ,int index) {
+		System.out.println(list.get(index));
 	}
 
 

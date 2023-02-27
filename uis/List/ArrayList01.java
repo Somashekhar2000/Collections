@@ -89,7 +89,12 @@ public class ArrayList01 {
  * 11.WAP to join two ArrayList.
  */
 		
-		ArrayList01.joinTwoLists(a1, b1);
+//		ArrayList01.joinTwoLists(a1, b1);
+		
+/*
+ * 13.WAP to empty an ArrayList.
+ */
+		ArrayList01.emptyAnArrayList(b1);
 		
 	}
 	
@@ -165,4 +170,8 @@ public class ArrayList01 {
 		System.out.println(list1);
 	}
 
+	public static void emptyAnArrayList(List list) {
+		 list.removeAll(list);
+		 System.out.println(list);
+	}
 }

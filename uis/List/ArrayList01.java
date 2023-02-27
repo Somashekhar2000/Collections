@@ -83,7 +83,13 @@ public class ArrayList01 {
  * 10.WAP to compare two ArrayList
  */
 		
-		ArrayList01.compareTwoArrayList(a1, a1);
+//		ArrayList01.compareTwoArrayList(a1, a1);
+		
+/*
+ * 11.WAP to join two ArrayList.
+ */
+		
+		ArrayList01.joinTwoLists(a1, b1);
 		
 	}
 	
@@ -151,6 +157,12 @@ public class ArrayList01 {
 				System.out.print(" no ");
 			}
 		}
+	}
+	
+	public static void joinTwoLists(List list1,List list2) {
+		int n=list1.size();
+		list1.addAll(n, list2);
+		System.out.println(list1);
 	}
 
 }

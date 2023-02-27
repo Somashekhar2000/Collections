@@ -69,7 +69,15 @@ public class ArrayList01 {
  *8. WAP to COPY ONE ARRAYLIST INTO ANOTHER. 
  */
 		
-		ArrayList01.copyArrayListToAnother(b1);
+//		ArrayList01.copyArrayListToAnother(b1);
+		
+/*
+ * 9. WAP to EXTRACT A PORTION OF AN ARRAYLIST.
+ */
+		
+		int fromIndex=2;
+		int toIndex=5;
+		ArrayList01.extractList(b1, fromIndex, toIndex);
 		
 	}
 	
@@ -122,6 +130,11 @@ public class ArrayList01 {
 		ArrayList list2=new ArrayList(list.size());
 		list2.addAll(list);
 		System.out.println("new list :"+list);
+	}
+	
+	public static void extractList(List list,int fromIndex,int toIndex) {
+		System.out.println(" initial list:"+list);
+		System.out.println("extracted portion :"+list.subList(fromIndex, toIndex));
 	}
 
 }

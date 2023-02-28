@@ -57,7 +57,12 @@ public class LinkedListPracticals {
 /*
  * 10.WAP to get the first and last elements in a LinkedList.
  */
-		LinkedListPracticals.getFirstAndLastElements(a1);
+//		LinkedListPracticals.getFirstAndLastElements(a1);
+		
+/*
+ * 11.WAP to display the elements and their positions in a LinkedList.
+ */
+		LinkedListPracticals.getElementAndIndexNumber(a1);
 		
 	}
 	
@@ -98,6 +103,12 @@ public class LinkedListPracticals {
 	public static void getFirstAndLastElements(LinkedList list) {
 		System.out.println(list.getFirst());
 		System.out.println(list.getLast());
+	}
+	
+	public static void getElementAndIndexNumber(LinkedList list) {
+		for(int i = 0 ; i < list.size() ; i++) {
+			System.out.println("Element at Index "+i+" : "+list.get(i));
+		}
 	}
 
 }

@@ -62,7 +62,12 @@ public class LinkedListPracticals {
 /*
  * 11.WAP to display the elements and their positions in a LinkedList.
  */
-		LinkedListPracticals.getElementAndIndexNumber(a1);
+//		LinkedListPracticals.getElementAndIndexNumber(a1);
+		
+/*
+ * 12.WAP to remove a specified element from a LinkedList
+ */
+		LinkedListPracticals.removingSpecifiedElement(a1);
 		
 	}
 	
@@ -109,6 +114,12 @@ public class LinkedListPracticals {
 		for(int i = 0 ; i < list.size() ; i++) {
 			System.out.println("Element at Index "+i+" : "+list.get(i));
 		}
+	}
+	
+	public static void removingSpecifiedElement(LinkedList list) {
+		System.out.println("Original list :"+list);
+		list.remove(2);
+		System.out.println("Added list :"+list);
 	}
 
 }

@@ -52,7 +52,12 @@ public class LinkedListPracticals {
 /*
  * 9. WAP to insert some elements at the specified position into a LinkedList.
  */
-		LinkedListPracticals.insertSomeElementsAtGivenIndex(a1);
+//		LinkedListPracticals.insertSomeElementsAtGivenIndex(a1);
+		
+/*
+ * 10.WAP to get the first and last elements in a LinkedList.
+ */
+		LinkedListPracticals.getFirstAndLastElements(a1);
 		
 	}
 	
@@ -88,6 +93,11 @@ public class LinkedListPracticals {
 		a2.add("Peach");
 		list.addAll(1, a2);
 		System.out.println("Added list :"+list);
+	}
+	
+	public static void getFirstAndLastElements(LinkedList list) {
+		System.out.println(list.getFirst());
+		System.out.println(list.getLast());
 	}
 
 }

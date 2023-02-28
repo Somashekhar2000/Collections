@@ -18,7 +18,15 @@ public class LinkedListPracticals {
 		a1.add("Pink");
 		a1.add("Yellow");
 		
-		System.out.println(a1);
+		//System.out.println(a1);
+		
+/*
+ * 2. WAP to iterate through all elements in a LinkedList.
+
+ */
+		for(Object O : a1) {
+			System.out.println(O);
+		}
 		
 	}
 	

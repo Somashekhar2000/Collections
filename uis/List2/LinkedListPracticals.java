@@ -37,7 +37,12 @@ public class LinkedListPracticals {
 /*
  * 6. WAP to insert elements into the LinkedList at the first and last position
  */
-		LinkedListPracticals.insertInFirstAndLast(a1);
+		//LinkedListPracticals.insertInFirstAndLast(a1);
+		
+/*
+ * 7. WAP to insert the specified element at the front of a LinkedList.
+ */
+		LinkedListPracticals.insertElementAtFront(a1);
 	}
 	
 	public static void insertElementAtSpecifiedPosition(List list) {
@@ -51,7 +56,12 @@ public class LinkedListPracticals {
 		list.addFirst("Sliver");
 		list.addLast("Gold");
 		System.out.println("Added list :"+list);
-		
+	}
+	
+	public static void insertElementAtFront(LinkedList list) {
+		System.out.println("Original list :"+list);
+		list.offerFirst("Purpole");
+		System.out.println("Added list :"+list);
 	}
 
 }

@@ -1,6 +1,7 @@
 package com.uis.List2;
 
 import java.util.LinkedList;
+import java.util.List;
 
 public class LinkedListPracticals {
 
@@ -24,10 +25,20 @@ public class LinkedListPracticals {
  * 2. WAP to iterate through all elements in a LinkedList.
 
  */
-		for(Object O : a1) {
-			System.out.println(O);
-		}
+//		for(Object O : a1) {
+//			System.out.println(O);
+//		}
 		
+/*
+ * 5. WAP to insert the specified element at the specified position in the LinkedList
+ */
+		LinkedListPracticals.insertElementAtSpecifiedPosition(a1);
+		
+	}
+	
+	public static void insertElementAtSpecifiedPosition(List list) {
+		list.add(3, "Brown");
+		System.out.println(list);
 	}
 	
 	

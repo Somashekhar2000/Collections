@@ -47,7 +47,12 @@ public class LinkedListPracticals {
 /*
  * 8. WAP to insert the specified element at the end of a LinkedList
  */
-		LinkedListPracticals.insertElementAtEnd(a1);
+//		LinkedListPracticals.insertElementAtEnd(a1);
+		
+/*
+ * 9. WAP to insert some elements at the specified position into a LinkedList.
+ */
+		LinkedListPracticals.insertSomeElementsAtGivenIndex(a1);
 		
 	}
 	
@@ -73,6 +78,15 @@ public class LinkedListPracticals {
 	public static void insertElementAtEnd(LinkedList list) {
 		System.out.println("Original list :"+list);
 		list.offerLast("Grey");
+		System.out.println("Added list :"+list);
+	}
+	
+	public static void insertSomeElementsAtGivenIndex(LinkedList list) {
+		System.out.println("Original list :"+list);
+		LinkedList a2 = new LinkedList<>();
+		a2.add("Parrot Green");
+		a2.add("Peach");
+		list.addAll(1, a2);
 		System.out.println("Added list :"+list);
 	}
 

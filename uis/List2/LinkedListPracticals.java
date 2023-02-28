@@ -72,7 +72,12 @@ public class LinkedListPracticals {
 /*
  * 13.WAP to remove the first and last element from a LinkedList.
  */
-		LinkedListPracticals.removingFirstAndLast(a1);
+//		LinkedListPracticals.removingFirstAndLast(a1);
+		
+/*
+ * 14.WAP to remove all the elements from a LinkedList.
+ */
+		LinkedListPracticals.removingAllElements(a1);
 		
 	}
 	
@@ -131,6 +136,12 @@ public class LinkedListPracticals {
 		System.out.println("Original list :"+list);
 		list.removeFirst();
 		list.removeLast();
+		System.out.println("Added list :"+list);
+	}
+	
+	public static void removingAllElements(LinkedList list) {
+		System.out.println("Original list :"+list);
+		list.clear();
 		System.out.println("Added list :"+list);
 	}
 

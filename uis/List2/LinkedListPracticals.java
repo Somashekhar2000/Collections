@@ -131,7 +131,12 @@ public class LinkedListPracticals {
 /*
  * * 25. WAP to test if a LinkedList is empty or not.
  */
-		LinkedListPracticals.isEmptyOrNot(a1);
+//		LinkedListPracticals.isEmptyOrNot(a1);
+		
+/*
+ * 26. WAP to replace an element in a LinkedList
+ */
+		LinkedListPracticals.replacingElements(a1);
 				
 		
 	}
@@ -253,6 +258,12 @@ public class LinkedListPracticals {
 			list.removeAll(list);
 			System.out.println("after removing : "+list);
 		}
+	}
+	
+	public static void replacingElements(LinkedList list) {
+		System.out.println("original list : "+list);
+		list.set(1, "Gold");
+		System.out.println("replaced list : "+list);
 	}
 	
 }

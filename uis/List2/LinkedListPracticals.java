@@ -1,5 +1,7 @@
 package com.uis.List2;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -83,9 +85,14 @@ public class LinkedListPracticals {
 /*
  * 17. WAP to join two LinkedLists.
  */
-		LinkedList a2 = a1;
-		LinkedListPracticals.joing2LinkedLists(a1,a2);
+//		LinkedList a2 = a1;
+//		LinkedListPracticals.joing2LinkedLists(a1,a2);
 	
+/*
+ * 19. WAP to remove and return the first element of a LinkedList
+ */
+		String s = LinkedListPracticals.removeAndReturnFirstElemenet(a1);
+		System.out.println("Removed First Elemenet : "+s);
 		
 	}
 	
@@ -153,10 +160,9 @@ public class LinkedListPracticals {
 		System.out.println("Added list :"+list);
 	}
 	
-	public static void joing2LinkedLists(LinkedList list1 , LinkedList list2) {
+	public static String removeAndReturnFirstElemenet(LinkedList<String> list1) {
 		System.out.println("Original list :"+list1);
-		list1.addAll(list2);
-		System.out.println("Added list :"+list1);
+		return list1.pop();
 	}
 
 }

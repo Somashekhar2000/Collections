@@ -91,8 +91,13 @@ public class LinkedListPracticals {
 /*
  * 19. WAP to remove and return the first element of a LinkedList
  */
-		String s = LinkedListPracticals.removeAndReturnFirstElemenet(a1);
-		System.out.println("Removed First Elemenet : "+s);
+//		String s = LinkedListPracticals.removeAndReturnFirstElemenet(a1);
+//		System.out.println("Removed First Elemenet : "+s);
+		
+/*
+ * 20. WAP to retrieve but does not remove, the first element of a LinkedList.
+ */
+		LinkedListPracticals.retrieveFirstElement(a1);
 		
 	}
 	
@@ -163,6 +168,12 @@ public class LinkedListPracticals {
 	public static String removeAndReturnFirstElemenet(LinkedList<String> list1) {
 		System.out.println("Original list :"+list1);
 		return list1.pop();
+	}
+	
+	public static void retrieveFirstElement(LinkedList list) {
+		System.out.println("Original list :"+list);
+		System.out.println("Retrieved First Element : "+list.peekFirst());
+		System.out.println("Original list :"+list);
 	}
 
 }

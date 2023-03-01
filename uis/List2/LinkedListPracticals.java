@@ -77,7 +77,15 @@ public class LinkedListPracticals {
 /*
  * 14.WAP to remove all the elements from a LinkedList.
  */
-		LinkedListPracticals.removingAllElements(a1);
+//		LinkedListPracticals.removingAllElements(a1);
+		
+		
+/*
+ * 17. WAP to join two LinkedLists.
+ */
+		LinkedList a2 = a1;
+		LinkedListPracticals.joing2LinkedLists(a1,a2);
+	
 		
 	}
 	
@@ -143,6 +151,12 @@ public class LinkedListPracticals {
 		System.out.println("Original list :"+list);
 		list.clear();
 		System.out.println("Added list :"+list);
+	}
+	
+	public static void joing2LinkedLists(LinkedList list1 , LinkedList list2) {
+		System.out.println("Original list :"+list1);
+		list1.addAll(list2);
+		System.out.println("Added list :"+list1);
 	}
 
 }

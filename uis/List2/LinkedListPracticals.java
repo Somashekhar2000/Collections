@@ -102,7 +102,12 @@ public class LinkedListPracticals {
 /*
  * 21. WAP to retrieve but does not remove, the last element of a LinkedList.
  */
-		LinkedListPracticals.retrieveLastElement(a1);
+//		LinkedListPracticals.retrieveLastElement(a1);
+		
+/*
+ * 22. WAP to check if a particular element exists in a LinkedList.
+ */
+		LinkedListPracticals.containsElemenet(a1);
 		
 	}
 	
@@ -185,5 +190,14 @@ public class LinkedListPracticals {
 		System.out.println("Original list :"+list);
 		System.out.println("Retrieved Last Element : "+list.peekLast());
 		System.out.println("Original list :"+list);
+	}
+	
+	public static void containsElemenet(LinkedList list) {
+		System.out.println("Original list :"+list);
+		if(list.contains("Black")) {
+			System.out.println("Colour found");
+		}else {
+			System.out.println("Colour not found");
+		}
 	}
 }

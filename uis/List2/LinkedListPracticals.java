@@ -1,5 +1,6 @@
 package com.uis.List2;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedList;
@@ -107,7 +108,12 @@ public class LinkedListPracticals {
 /*
  * 22. WAP to check if a particular element exists in a LinkedList.
  */
-		LinkedListPracticals.containsElemenet(a1);
+//		LinkedListPracticals.containsElemenet(a1);
+		
+/*
+ * 23. WAP to convert a LinkedList to ArrayList
+ */
+		LinkedListPracticals.convertingLinkedListToArrayList(a1);
 		
 	}
 	
@@ -199,5 +205,11 @@ public class LinkedListPracticals {
 		}else {
 			System.out.println("Colour not found");
 		}
+	}
+	
+	public static void convertingLinkedListToArrayList(LinkedList list1) {
+		System.out.println("Linked List : "+list1);
+		ArrayList list2 = new ArrayList<>(list1);
+		System.out.println("Array List : "+list2);
 	}
 }

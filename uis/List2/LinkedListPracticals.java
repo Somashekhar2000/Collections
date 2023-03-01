@@ -126,7 +126,13 @@ public class LinkedListPracticals {
 /*
  * 24. WAP to compare two LinkedLists.
  */
-		LinkedListPracticals.comparing2LinkedLists(a1,a2);
+//		LinkedListPracticals.comparing2LinkedLists(a1,a2);
+		
+/*
+ * * 25. WAP to test if a LinkedList is empty or not.
+ */
+		LinkedListPracticals.isEmptyOrNot(a1);
+				
 		
 	}
 	
@@ -237,6 +243,16 @@ public class LinkedListPracticals {
 				}
 				System.out.println(s);
 			}
+	}
+	
+	public static void isEmptyOrNot(LinkedList list) {
+		System.out.println(list);
+		if(list.isEmpty()) {
+			System.out.println("input is already empty");
+		}else {
+			list.removeAll(list);
+			System.out.println("after removing : "+list);
+		}
 	}
 	
 }

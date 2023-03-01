@@ -12,6 +12,7 @@ public class LinkedListPracticals {
 		// TODO Auto-generated method stub
 		
 		LinkedList a1 = new LinkedList();
+		LinkedList a2 = new LinkedList();
 /*
  * 1. WAP to append the specified element to the end of a LinkedList.
  */
@@ -21,6 +22,13 @@ public class LinkedListPracticals {
 		a1.add("White");
 		a1.add("Pink");
 		a1.add("Yellow");
+		
+		a2.add("Red");
+		a2.add("Green");
+		a2.add("Black");
+		a2.add("White");
+		a2.add("Pink");
+		a2.add("Yellow");
 		
 		//System.out.println(a1);
 		
@@ -93,7 +101,7 @@ public class LinkedListPracticals {
  * 19. WAP to remove and return the first element of a LinkedList
  */
 //		String s = LinkedListPracticals.removeAndReturnFirstElemenet(a1);
-//		System.out.println("Removed First Elemenet : "+s);
+//		System.out.println("Removed First Element : "+s);
 		
 /*
  * 20. WAP to retrieve but does not remove, the first element of a LinkedList.
@@ -113,7 +121,12 @@ public class LinkedListPracticals {
 /*
  * 23. WAP to convert a LinkedList to ArrayList
  */
-		LinkedListPracticals.convertingLinkedListToArrayList(a1);
+//		LinkedListPracticals.convertingLinkedListToArrayList(a1);
+		
+/*
+ * 24. WAP to compare two LinkedLists.
+ */
+		LinkedListPracticals.comparing2LinkedLists(a1,a2);
 		
 	}
 	
@@ -212,4 +225,18 @@ public class LinkedListPracticals {
 		ArrayList list2 = new ArrayList<>(list1);
 		System.out.println("Array List : "+list2);
 	}
+	
+	public static void comparing2LinkedLists(LinkedList list1,LinkedList list2) {
+			String s = null;
+			for(int i = 0 ; i < list1.size() ; i++) {
+				for(int j = 0 ;j < list2.size() ; j++) {
+					 s = (list1.get(i).equals(list2.get(j))?"yes":"no");
+					 if(s=="yes") {
+						 break;
+					 }
+				}
+				System.out.println(s);
+			}
+	}
+	
 }

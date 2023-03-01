@@ -97,7 +97,12 @@ public class LinkedListPracticals {
 /*
  * 20. WAP to retrieve but does not remove, the first element of a LinkedList.
  */
-		LinkedListPracticals.retrieveFirstElement(a1);
+//		LinkedListPracticals.retrieveFirstElement(a1);
+		
+/*
+ * 21. WAP to retrieve but does not remove, the last element of a LinkedList.
+ */
+		LinkedListPracticals.retrieveLastElement(a1);
 		
 	}
 	
@@ -175,5 +180,10 @@ public class LinkedListPracticals {
 		System.out.println("Retrieved First Element : "+list.peekFirst());
 		System.out.println("Original list :"+list);
 	}
-
+	
+	public static void retrieveLastElement(LinkedList list) {
+		System.out.println("Original list :"+list);
+		System.out.println("Retrieved Last Element : "+list.peekLast());
+		System.out.println("Original list :"+list);
+	}
 }

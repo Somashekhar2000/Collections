@@ -24,9 +24,12 @@ public class HashSetPractical
 //3. WAP to get the number of elements in a HashSet.
 		//System.out.println("get numnber of elements : "+a1.size());
 
-//4. WAP to empty the HashSet.
-		System.err.println("Hashset is Empty : "+a1.isEmpty());
+//5. WAP to test a HashSet is empty or not.
+		//System.err.println("Hashset is Empty : "+a1.isEmpty());
 		
+//4. WAP to empty the HashSet.
+		a1.clear();
+		System.out.println(a1);
 		
 		
 		

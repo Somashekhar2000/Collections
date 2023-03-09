@@ -3,6 +3,7 @@ package com.uis.Collections.HashSet;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.TreeSet;
 
 public class HashSetPractical 
 {
@@ -37,8 +38,12 @@ public class HashSetPractical
 //		System.out.println("cloned hashset : "+a1.clone());
 		
 //7. WAP to convert a HashSet to an array.
-		ArrayList s = new ArrayList<>(a1);
-		System.out.println("ArrayList : "+s);
+//		ArrayList s = new ArrayList<>(a1);
+//		System.out.println("ArrayList : "+s);
+		
+//8. WAP to convert a HashSet to a TreeSet.
+		TreeSet t = new TreeSet<>(a1);
+		System.out.println("treeset : "+t);
 		
 		
 	}

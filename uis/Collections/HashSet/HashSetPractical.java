@@ -42,9 +42,21 @@ public class HashSetPractical
 //		System.out.println("ArrayList : "+s);
 		
 //8. WAP to convert a HashSet to a TreeSet.
-		TreeSet t = new TreeSet<>(a1);
-		System.out.println("treeset : "+t);
+//		TreeSet t = new TreeSet<>(a1);
+//		System.out.println("treeset : "+t);
 		
+//10. WAP to compare two HashSet.
+		HashSet s1 = new HashSet<>();
+		s1.add("Red");
+		s1.add("blue");
+		s1.add("black");
+		s1.add("green");
+		s1.add("white");
+		
+	//	System.out.println("comparing 2 hashset : "+a1.containsAll(s1));
+		
+//11. WAP to compare two sets and retain elements which are same on	both sets.
+		compareRetain(a1, s1);
 		
 	}
 	
@@ -57,5 +69,13 @@ public class HashSetPractical
 			System.out.print(t1.next()+",");
 		}
 		System.out.println("]");
+	}
+	
+	
+
+	public static void compareRetain(HashSet a1,HashSet a2) 
+	{
+		System.out.println(a1.containsAll(a2));
+		System.out.println(a1.equals(a2));
 	}
 }

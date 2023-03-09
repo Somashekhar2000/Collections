@@ -19,6 +19,7 @@ public class HashSetPractical
 		a1.add("black");
 		a1.add("green");
 		a1.add("white");
+		a1.add(10);
 		
 //2. WAP to iterate through all elements in a HashSet.
 		//HashSetPractical.iteratorHashSet(a1);
@@ -52,11 +53,17 @@ public class HashSetPractical
 		s1.add("black");
 		s1.add("green");
 		s1.add("white");
+		s1.add("silver");
 		
-	//	System.out.println("comparing 2 hashset : "+a1.containsAll(s1));
+		
+//System.out.println("comparing 2 hashset : "+a1.containsAll(s1));
 		
 //11. WAP to compare two sets and retain elements which are same on	both sets.
-		compareRetain(a1, s1);
+		//compareRetain(a1, s1);
+		
+//12. WAP to remove all the elements from a HashSet
+		a1.removeAll(a1);
+		System.out.println(a1);
 		
 	}
 	
@@ -75,7 +82,10 @@ public class HashSetPractical
 
 	public static void compareRetain(HashSet a1,HashSet a2) 
 	{
-		System.out.println(a1.containsAll(a2));
-		System.out.println(a1.equals(a2));
+		for(Object a : a1) {
+			if(a2.contains(a)) {
+				System.out.println(a);
+			}
+		}	
 	}
 }

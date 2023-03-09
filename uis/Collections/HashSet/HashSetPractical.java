@@ -19,10 +19,11 @@ public class HashSetPractical
 		a1.add("white");
 		
 //2. WAP to iterate through all elements in a HashSet.
-		HashSetPractical.iteratorHashSet(a1);
+		//HashSetPractical.iteratorHashSet(a1);
 		
-		
-		
+//3. WAP to get the number of elements in a HashSet.
+		System.out.println("get numnber of elements : "+a1.size());
+			
 	}
 	
 	public static void iteratorHashSet(HashSet a1)
@@ -33,6 +34,6 @@ public class HashSetPractical
 		{
 			System.out.print(t1.next()+",");
 		}
-		System.out.print("]");
+		System.out.println("]");
 	}
 }

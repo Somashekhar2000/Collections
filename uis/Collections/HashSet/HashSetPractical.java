@@ -1,5 +1,6 @@
 package com.uis.Collections.HashSet;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 
@@ -32,9 +33,12 @@ public class HashSetPractical
 //		System.out.println(a1);
 		
 //6. WAP to clone a HashSet to another HashSet.
-		System.out.println("original hashset : "+a1);
-		System.out.println("cloned hashset : "+a1.clone());
+//		System.out.println("original hashset : "+a1);
+//		System.out.println("cloned hashset : "+a1.clone());
 		
+//7. WAP to convert a HashSet to an array.
+		ArrayList s = new ArrayList<>(a1);
+		System.out.println("ArrayList : "+s);
 		
 		
 	}

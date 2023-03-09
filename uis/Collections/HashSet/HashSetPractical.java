@@ -22,8 +22,14 @@ public class HashSetPractical
 		//HashSetPractical.iteratorHashSet(a1);
 		
 //3. WAP to get the number of elements in a HashSet.
-		System.out.println("get numnber of elements : "+a1.size());
-			
+		//System.out.println("get numnber of elements : "+a1.size());
+
+//4. WAP to empty the HashSet.
+		System.err.println("Hashset is Empty : "+a1.isEmpty());
+		
+		
+		
+		
 	}
 	
 	public static void iteratorHashSet(HashSet a1)

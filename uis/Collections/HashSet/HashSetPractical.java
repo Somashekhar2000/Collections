@@ -28,8 +28,12 @@ public class HashSetPractical
 		//System.err.println("Hashset is Empty : "+a1.isEmpty());
 		
 //4. WAP to empty the HashSet.
-		a1.clear();
-		System.out.println(a1);
+//		a1.clear();
+//		System.out.println(a1);
+		
+//6. WAP to clone a HashSet to another HashSet.
+		System.out.println("original hashset : "+a1);
+		System.out.println("cloned hashset : "+a1.clone());
 		
 		
 		

@@ -19,8 +19,17 @@ public class TreeSetDemo {
 	//	System.out.println("Created new TreeSet : "+set1);
 		
 //2. WAP to iterate through all elements in a TreeSet.
-		TreeSetDemo.iteratingTreeSet(set1);
+//		TreeSetDemo.iteratingTreeSet(set1);
 		
+//3. WAP to add all the elements of a specified TreeSet to another TreeSet
+		TreeSetDemo.addingtreeSetElmenetsTOAnotherTreeSet(set1);
+		
+	}
+	
+	public static void addingtreeSetElmenetsTOAnotherTreeSet (TreeSet set1) {
+		System.out.println("TreeSet Set1 : "+set1);
+		TreeSet set2 = set1;
+		System.out.println("Added TreeSet set2 : "+set2);
 	}
 	
 	public static void iteratingTreeSet(TreeSet set1) {
@@ -32,6 +41,8 @@ public class TreeSetDemo {
 		}
 		System.out.println("]");
 	}
+	
+	
 	
 
 }

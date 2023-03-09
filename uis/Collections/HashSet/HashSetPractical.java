@@ -18,5 +18,21 @@ public class HashSetPractical
 		a1.add("green");
 		a1.add("white");
 		
-
+//2. WAP to iterate through all elements in a HashSet.
+		HashSetPractical.iteratorHashSet(a1);
+		
+		
+		
+	}
+	
+	public static void iteratorHashSet(HashSet a1)
+	{
+		Iterator t1 = a1.iterator();
+		System.out.print("[");
+		while(t1.hasNext()) 
+		{
+			System.out.print(t1.next()+",");
+		}
+		System.out.print("]");
+	}
 }
